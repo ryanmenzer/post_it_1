@@ -8,7 +8,10 @@
 
 .post-it {
   position: absolute !important;
+  min-width: 90px;
+  min-height: 60px;
   width: 160px;
+  height: 160px;
   background-color: yellow;
   box-shadow: -2px 2px 5px #555;
   overflow: hidden;
@@ -18,6 +21,7 @@
   background-color: #c2c25b;
   text-align: right;
   padding: 2px;
+  height: 20px;
 }
 
 .post-it .header:hover {
@@ -25,9 +29,15 @@
 }
 
 .post-it .header a, .post-it .header a:visited {
+  display: block;
+  height: inherit;
+  width: 15px;
+  float: right;
   text-decoration: none;
   color: black;
   font-weight: bold;
+  font-size: 1.3em;
+  padding-right: 5px;
 }
 
 .post-it .header a:hover {
